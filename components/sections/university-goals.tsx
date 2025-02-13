@@ -36,8 +36,8 @@ export function UniversityGoals() {
     <section className="md:pt-16">
       <div className="container py-5 md:py-[3rem] mx-auto">
         <div className="grid md:grid-cols-2">
-        <div>
-            <img src="/goals.jpg" className="h-full" alt="" />
+          <div>
+            <img src="/goals.png" className="h-full" alt="" />
           </div>
           <div className="md:p-[3rem] p-5">
             <p className="text-3xl pb-5 md:pb-[2rem] font-bold ">University Goals</p>

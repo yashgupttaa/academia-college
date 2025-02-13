@@ -55,7 +55,7 @@ export default function AboutPage() {
           <div
             className="absolute inset-0 z-0"
             style={{
-              backgroundImage: 'url("/about-bg.webp")',
+              backgroundImage: 'url("/bba.webp")',
               backgroundPosition: "center",
               backgroundSize: "cover",
               backgroundRepeat: "no-repeat",
@@ -64,22 +64,62 @@ export default function AboutPage() {
             <div className="absolute inset-0 bg-black/50"></div>
           </div>
           <div className="relative z-10 container mx-auto px-4 h-screen flex items-center">
-            <div className="max-w-3xl hero-content">
-              {/* <h2 className="text-xl font-medium mb-4 tracking-wide text-white">WELCOME TO ACADEMIA</h2> */}
-              <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight text-white">
-                About Academia
-              </h1>
-              <p className="text-lg mb-8 text-white/90 max-w-lg">
-                Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the
-                blind texts.
-              </p>
-              <div className="flex flex-wrap gap-4">
-                <Button className="bg-red-color text-white border-none font-bold text-lg p-5 font-light">
-                  Apply Now <ArrowRight className="ml-2" size={16} />
-                </Button>
-                {/* <Button variant="outline" className="bg-white border-white red-color font-bold hover:bg-white p-5">
-                  VIEW COURSE <ArrowRight className="ml-2" size={16} />
-                </Button> */}
+            <div className="grid md:grid-cols-2 gap-8">
+              <div className="max-w-3xl hero-content">
+                <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight text-white pt-[8rem]">
+                  Bachelor of Business Administration (BBA)
+                </h1>
+                <p className="text-lg mb-8 text-white/90 max-w-lg">
+                  The Bachelor of Business Administration (BBA) programme at IILM University, Greater Noida, offers a transformative business education experience.
+                </p>
+                <div className="flex flex-wrap gap-4">
+                  <Button className="bg-red-color text-white border-none font-bold text-lg p-5 font-light">
+                    Apply Now <ArrowRight className="ml-2" size={16} />
+                  </Button>
+                </div>
+              </div>
+              <div className="md:w-[576px]">
+                <div className="bg-white p-2 text-center">
+                  <p className="red-color text-xl font-light mb-2">REGISTER NOW!</p>
+                  <p className="text-xl font-semibold mb-3">SEAL YOUR SPOT FOR SUCCESS</p>
+                  <p className="red-color text-xl font-bold m-0">ADMISSION OPEN FOR 2025</p>
+                </div>
+                <div className="bg-blue-color px-3 py-2">
+                  <input className="rounded p-2 w-full mb-2" type="text" placeholder="Enter Name" />
+                  <input className="rounded p-2 w-full mb-2" type="email" placeholder="Enter Email Address" />
+                  <input className="rounded p-2 w-full mb-2" type="number" placeholder="Enter Mobile Number" />
+                  <input className="rounded p-2 w-full mb-2" type="text" placeholder="Enter OTP" />
+                  <div className="grid md:grid-cols-2 gap-2 mb-2">
+                    <div>
+                      <select className="rounded p-2 w-full" name="cars" id="cars">
+                        <option value="volvo">Select State</option>
+                        <option value="saab">Tamilnadu</option>
+                        <option value="mercedes">Uttar Pradesh</option>
+                        <option value="audi">Gujrat</option>
+                      </select>
+                    </div>
+                    <div>
+                      <select className="rounded p-2 w-full" name="cars" id="cars">
+                        <option value="volvo">Select City</option>
+                        <option value="saab">Tamilnadu</option>
+                        <option value="mercedes">Uttar Pradesh</option>
+                        <option value="audi">Gujrat</option>
+                      </select>
+                    </div>
+                  </div>
+                  <select className="rounded p-2 w-full" name="cars" id="cars">
+                    <option value="volvo">Select Programme</option>
+                    <option value="saab">BA/BA (Hons) in Hospitality and Service Management</option>
+                    <option value="mercedes">MBA in Energy Management</option>
+                    <option value="audi">BBA Aviation Management</option>
+                  </select>
+                  <div className="flex gap-4 my-5">
+                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
+                    <label htmlFor="vehicle1" className="text-white">I agree to receive information regarding my submitted enquiry on IILM.</label>
+                  </div>
+                  <button className="bg-red-color-wo-hover rounded w-full text-white py-2 mb-4">Submit</button>
+                </div>
+                <div className="h-8  w-full bg-white"></div>
               </div>
             </div>
           </div>

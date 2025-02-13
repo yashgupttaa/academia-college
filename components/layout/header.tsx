@@ -45,7 +45,7 @@ export function Header() {
               </Link>
               {isCoursesOpen && (
                 <div className="absolute left-0 mt-2 w-48 bg-white text-black rounded shadow-lg">
-                  <Link href="/courses/design" className="block px-4 py-2 hover:bg-gray-200">
+                  <Link href="/courses/bba" className="block px-4 py-2 hover:bg-gray-200">
                     BBA
                   </Link>
                   <Link href="/courses/development" className="block px-4 py-2 hover:bg-gray-200">
@@ -66,8 +66,8 @@ export function Header() {
             <Link href="/about" className="text-white px-4 py-2 block hover:bg-white/20 rounded">
               About
             </Link>
-            <Link href="/team" className="text-white px-4 py-2 block hover:bg-white/20 rounded">
-              Team
+            <Link href="/faculity" className="text-white px-4 py-2 block hover:bg-white/20 rounded">
+              Faculity
             </Link>
             <Link href="/pricing" className="text-white px-4 py-2 block hover:bg-white/20 rounded">
               Pricing
