@@ -26,10 +26,14 @@ export function Header() {
 
           {/* Navigation */}
           <nav
-            className={`absolute md:relative header-bg top-full left-0 w-full md:w-auto bg-black/90 md:bg-transparent p-5 md:p-0 md:flex items-center space-x-6 ${isMobileMenuOpen ? "block" : "hidden"
-              }`}
+            className={`absolute md:relative header-bg top-full left-0 w-full md:w-auto bg-black/90 md:bg-transparent p-5 md:p-0 md:flex items-center space-x-6 ${
+              isMobileMenuOpen ? "block" : "hidden"
+            }`}
           >
-            <Link href="/" className="text-white px-4 py-2 block hover:bg-white/20 rounded">
+            <Link
+              href="/"
+              className="text-white px-4 py-2 block hover:bg-white/20 rounded"
+            >
               Home
             </Link>
             <div
@@ -45,57 +49,94 @@ export function Header() {
               </Link>
               {isCoursesOpen && (
                 <div className="absolute left-0 mt-2 w-48 bg-white text-black rounded shadow-lg">
-                  <Link href="/courses/bba" className="block px-4 py-2 hover:bg-gray-200">
+                  <Link
+                    href="/courses/bba"
+                    className="block px-4 py-2 hover:bg-gray-200"
+                  >
                     BBA
                   </Link>
-                  <Link href="/courses/development" className="block px-4 py-2 hover:bg-gray-200">
-                    BCA
-                  </Link>
-                  <Link href="/courses/marketing" className="block px-4 py-2 hover:bg-gray-200">
-                    M Tech
-                  </Link>
-                  <Link href="/courses/marketing" className="block px-4 py-2 hover:bg-gray-200">
-                    B Tech
-                  </Link>
-                  <Link href="/courses/marketing" className="block px-4 py-2 hover:bg-gray-200">
+                  <Link
+                    href="/courses/bca-hons"
+                    className="block px-4 py-2 hover:bg-gray-200"
+                  >
                     BCA (HONS)
                   </Link>
+                  <Link
+                    href="/courses/marketing"
+                    className="block px-4 py-2 hover:bg-gray-200"
+                  >
+                    M Tech
+                  </Link>
+                  <Link
+                    href="/courses/marketing"
+                    className="block px-4 py-2 hover:bg-gray-200"
+                  >
+                    B Tech
+                  </Link>
+                 
                 </div>
               )}
             </div>
-            <Link href="/about" className="text-white px-4 py-2 block hover:bg-white/20 rounded">
+            <Link
+              href="/about"
+              className="text-white px-4 py-2 block hover:bg-white/20 rounded"
+            >
               About
             </Link>
-            <Link href="/faculity" className="text-white px-4 py-2 block hover:bg-white/20 rounded">
+            <Link
+              href="/faculity"
+              className="text-white px-4 py-2 block hover:bg-white/20 rounded"
+            >
               Faculity
             </Link>
-            <Link href="/pricing" className="text-white px-4 py-2 block hover:bg-white/20 rounded">
+            <Link
+              href="/pricing"
+              className="text-white px-4 py-2 block hover:bg-white/20 rounded"
+            >
               Pricing
             </Link>
-            <Link href="/journal" className="text-white px-4 py-2 block hover:bg-white/20 rounded">
+            <Link
+              href="/journal"
+              className="text-white px-4 py-2 block hover:bg-white/20 rounded"
+            >
               Journal
             </Link>
-            <Link href="/contact" className="text-white px-4 py-2 block hover:bg-white/20 rounded">
+            <Link
+              href="/contact"
+              className="text-white px-4 py-2 block hover:bg-white/20 rounded"
+            >
               Contact
             </Link>
           </nav>
 
           <div className="hidden md:flex items-center space-x-4">
-            <Link href="#" className="text-[#B2D8D8] p-2 rounded-full hover:bg-white/30 social-icons">
+            <Link
+              href="#"
+              className="text-[#B2D8D8] p-2 rounded-full hover:bg-white/30 social-icons"
+            >
               <Facebook size={20} color="#1a305c" />
             </Link>
-            <Link href="#" className="text-[#B2D8D8] p-2 rounded-full hover:bg-white/30 social-icons">
+            <Link
+              href="#"
+              className="text-[#B2D8D8] p-2 rounded-full hover:bg-white/30 social-icons"
+            >
               <Instagram size={20} color="#1a305c" />
             </Link>
-            <Link href="#" className="text-[#B2D8D8] p-2 rounded-full hover:bg-white/30 social-icons">
+            <Link
+              href="#"
+              className="text-[#B2D8D8] p-2 rounded-full hover:bg-white/30 social-icons"
+            >
               <Twitter size={20} color="#1a305c" />
             </Link>
-            <Link href="#" className="text-[#B2D8D8] p-2 rounded-full hover:bg-white/30 social-icons">
+            <Link
+              href="#"
+              className="text-[#B2D8D8] p-2 rounded-full hover:bg-white/30 social-icons"
+            >
               <Youtube size={20} color="#1a305c" />
             </Link>
           </div>
         </div>
       </div>
     </header>
-  )
+  );
 }

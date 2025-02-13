@@ -215,4 +215,8 @@ body {
   .border-right {
     border-right: none;
   }
+
+    .hero-content {
+      padding: 0;
+    }
 }
