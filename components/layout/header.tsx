@@ -16,7 +16,6 @@ export function Header() {
             <img src="/university.png" alt="Logo" width={70} height={70} />
           </Link>
 
-          {/* Mobile Menu Button */}
           <button
             className="md:hidden text-white"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -24,15 +23,13 @@ export function Header() {
             {isMobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
           </button>
 
-          {/* Navigation */}
           <nav
-            className={`absolute md:relative header-bg top-full left-0 w-full md:w-auto bg-black/90 md:bg-transparent p-5 md:p-0 md:flex items-center space-x-6 ${
-              isMobileMenuOpen ? "block" : "hidden"
-            }`}
+            className={`absolute md:relative header-bg top-full left-0 w-full md:w-auto bg-black/90 md:bg-transparent p-5 md:p-0 md:flex items-center space-x-6 ${isMobileMenuOpen ? "block" : "hidden"
+              }`}
           >
             <Link
               href="/"
-              className="text-white px-4 py-2 block hover:bg-white/20 rounded"
+              className="text-white px-4 py-2 block hover:text-[#81202c]"
             >
               Home
             </Link>
@@ -43,69 +40,69 @@ export function Header() {
             >
               <Link
                 href="/courses"
-                className="text-white flex items-center px-4 py-2 rounded hover:bg-white/20"
+                className="text-white flex items-center px-4 py-2 rounded hover:text-[#81202c]"
               >
                 All Courses <ChevronDown size={16} className="ml-1" />
               </Link>
               {isCoursesOpen && (
-                <div className="absolute left-0 mt-2 w-48 bg-white text-black rounded shadow-lg">
+                <div className="absolute left-0 mt-2 w-48 bg-blue-color text-white shadow-lg">
                   <Link
                     href="/courses/bba"
-                    className="block px-4 py-2 hover:bg-gray-200"
+                    className="block px-4 py-2 hover:bg-[#81202c]"
                   >
                     BBA
                   </Link>
                   <Link
                     href="/courses/bca-hons"
-                    className="block px-4 py-2 hover:bg-gray-200"
+                    className="block px-4 py-2 hover:bg-[#81202c]"
                   >
                     BCA (HONS)
                   </Link>
                   <Link
                     href="/courses/marketing"
-                    className="block px-4 py-2 hover:bg-gray-200"
+                    className="block px-4 py-2 hover:bg-[#81202c]"
                   >
                     M Tech
                   </Link>
                   <Link
                     href="/courses/marketing"
-                    className="block px-4 py-2 hover:bg-gray-200"
+                    className="block px-4 py-2 hover:bg-[#81202c]"
                   >
                     B Tech
                   </Link>
-                 
+
                 </div>
               )}
             </div>
             <Link
               href="/about"
-              className="text-white px-4 py-2 block hover:bg-white/20 rounded"
+              className="text-white px-4 py-2 block hover:text-[#81202c]"
             >
               About
             </Link>
             <Link
               href="/faculity"
-              className="text-white px-4 py-2 block hover:bg-white/20 rounded"
+              className="text-white px-4 py-2 block hover:text-[#81202c]"
             >
               Faculity
             </Link>
             <Link
-              href="/pricing"
-              className="text-white px-4 py-2 block hover:bg-white/20 rounded"
+              href="/addmissions"
+              className="text-white px-4 py-2 block hover:text-[#81202c]"
             >
-              Pricing
-            </Link>
-            <Link
-              href="/journal"
-              className="text-white px-4 py-2 block hover:bg-white/20 rounded"
-            >
-              Journal
+              Admissions
             </Link>
             <Link
               href="/contact"
-              className="text-white px-4 py-2 block hover:bg-white/20 rounded"
+              className="text-white px-4 py-2 block hover:text-[#81202c]"
             >
               Contact
+            </Link>
+            <Link
+              href="/campus-life"
+              className="text-white px-4 py-2 block hover:text-[#81202c]"
+            >
+              Campus Life
             </Link>
           </nav>
 

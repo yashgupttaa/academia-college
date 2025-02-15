@@ -116,7 +116,6 @@ body {
 }
 
 .hero-content {
-  background: rgb(14 14 14 / 20%);
   padding: 2rem;
   border-radius: 1px;
 }
@@ -187,16 +186,35 @@ body {
   border-right: 2px solid #FFFFFF;
 }
 
-.goals-point{
+.goals-point {
   border-left: 6px solid var(--red-color);
   padding-right: 8px;
 }
 
-.university-about{
+.university-about {
   background-image: url("https://images.unsplash.com/photo-1562774053-701939374585?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2186&q=80");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.bg-overlay-effect::after {
+  display: block;
+  position: absolute;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, #000 100%);
+  content: '';
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0.8;
+}
+
+.schools-div:nth-child(1),
+.schools-div:nth-child(2),
+.schools-div:nth-child(4),
+.schools-div:nth-child(5) {
+  border-right: 1px solid #FFFFFF;
 }
 
 @media only screen and (min-width: 991px) {
@@ -216,7 +234,18 @@ body {
     border-right: none;
   }
 
-    .hero-content {
-      padding: 0;
-    }
+  .hero-content {
+    padding: 0;
+  }
+
+  .schools-div {
+    border-bottom: 1px solid #FFFFFF;
+  }
+
+  .schools-div:nth-child(1),
+  .schools-div:nth-child(2),
+  .schools-div:nth-child(4),
+  .schools-div:nth-child(5) {
+    border-right: none;
+  }
 }

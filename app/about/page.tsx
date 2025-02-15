@@ -50,7 +50,6 @@ export default function AboutPage() {
     <>
       <Header />
       <main>
-        {/* Hero Section */}
         <section className="relative min-h-screen mb-16">
           <div
             className="absolute inset-0 z-0"
@@ -65,7 +64,6 @@ export default function AboutPage() {
           </div>
           <div className="relative z-10 container mx-auto px-4 h-screen flex items-center">
             <div className="max-w-3xl hero-content">
-              {/* <h2 className="text-xl font-medium mb-4 tracking-wide text-white">WELCOME TO ACADEMIA</h2> */}
               <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight text-white">
                 About Academia
               </h1>
@@ -74,20 +72,15 @@ export default function AboutPage() {
                 blind texts.
               </p>
               <div className="flex flex-wrap gap-4">
-                <Button className="bg-red-color text-white border-none font-bold text-lg p-5 font-light">
-                  Apply Now <ArrowRight className="ml-2" size={16} />
+                <Button className="bg-red-color text-white border-none rounded-none font-semibold text-base p-5">
+                  Apply Now
                 </Button>
-                {/* <Button variant="outline" className="bg-white border-white red-color font-bold hover:bg-white p-5">
-                  VIEW COURSE <ArrowRight className="ml-2" size={16} />
-                </Button> */}
               </div>
             </div>
           </div>
         </section>
 
-
-
-        {/* About Content */}
+        {/* {About Academia} */}
         <section className="container mx-auto px-4 py-16">
           <div className="grid md:grid-cols-2 gap-12">
             <div>
@@ -114,7 +107,36 @@ export default function AboutPage() {
           </div>
         </section>
 
-        {/* Vision & Mission */}
+        {/* {About Vision & Mission */}
+        <section className="container mx-auto px-4 py-16">
+          <div className="grid md:grid-cols-2 gap-5 md:gap-32">
+            <div>
+              <h2 className="text-3xl font-bold mb-6">IILM University Mission & Vision</h2>
+              <p className="red-color text-2xl font-bold mb-4">Our Vision:</p>
+              <p className="text-lg font-semibold mb-8 text-[#303030]">
+                Our vision is to be a leading University that inspires students to become responsible global citizens
+                and leaders in their chosen fields and in the world, through an innovative, interdisciplinary, and inclusive approach to Learning.
+              </p>
+              <p className="red-color text-2xl font-bold mb-4">Our Mission:</p>
+              <p className="text-lg font-semibold mb-4 text-[#303030]">
+                Our mission is to provide students with an education that is intellectually stimulating and practically
+                relevant. We aim to foster a community of learners who are innovative, interdisciplinary, and socially
+                responsible. We offer a range of programmes that are designed to prepare students for purposeful work
+                and to inspire them to make a positive difference in the world. We are dedicated to empowering students
+                with the knowledge, skills, and experiences they need to achieve their full potential and to become
+                responsible global citizens and leaders.
+              </p>
+            </div>
+            <div style={{ textAlign: '-webkit-right' }}>
+              <img
+                src="/mission.webp"
+                alt="Campus Life"
+                className="md:h-[600px]"
+              />
+            </div>
+          </div>
+        </section>
+
         <section className="py-16 bg-[#81202c]">
           <div className="container mx-auto px-4">
             <p className="text-3xl font-semibold text-white mb-12">Academia University Learning Goals</p>

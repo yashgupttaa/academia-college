@@ -9,7 +9,7 @@ import { Newsletter } from "@/components/sections/newsletter";
 import { WhyChooseUs } from "@/components/sections/why-choose-us";
 import { useState } from "react";
 
-export default function BcaPage() {
+export default function AddmissionsPage() {
   const sections = [
     {
       id: "eligibility",
@@ -146,16 +146,104 @@ export default function BcaPage() {
   ];
 
   const [activeSection, setActiveSection] = useState("eligibility");
+  const addmissionSteps = [
+    {
+      step: "Step 01",
+      head: "Register Yourself",
+      para: "Secure your spot today"
+    },
+    {
+      step: "Step 02",
+      head: "Verify email",
+      para: "Confirm your email for easy access"
+    },
+    {
+      step: "Step 03",
+      head: "Application Form",
+      para: "Complete your application form online"
+    },
+    {
+      step: "Step 04",
+      head: "Application fee",
+      para: "Pay your application fee to proceed"
+    },
+    {
+      step: "Step 05",
+      head: "Submit",
+      para: "Finalise your application and submit it"
+    },
+  ]
+  const programs = [
+    {
+      program: "BCA (Hons) with Specialisation in",
+      para: ""
+    },
+    {
+      program: "BCA",
+      para: ""
+    },
+    {
+      program: "B Tech in CSE",
+      para: ""
+    },
+    {
+      program: "B Tech in Electronics & Communication Engineering (Ece) in Collaboration with L&T",
+      para: ""
+    },
+    {
+      program: "Bachelor of Business Administration (BBA)",
+      para: ""
+    },
+    {
+      program: "BA LLB (Hons)",
+      para: ""
+    },
+    {
+      program: "BBA LLB (Hons)",
+      para: ""
+    },
+    {
+      program: "B Tech in Bioinformatics",
+      para: ""
+    },
+    {
+      program: "B Tech in Civil and Sustainable Infrastructure Engineering",
+      para: ""
+    },
+    {
+      program: "B Tech in Electrical and Computer Engineering",
+      para: ""
+    },
+    {
+      program: "B Tech in Electronics and Communication Engineering (ECE)",
+      para: ""
+    },
+    {
+      program: "B Tech in Electronics and Computer Engineering",
+      para: ""
+    },
+    {
+      program: "B Tech in Mechanical Engineering",
+      para: ""
+    },
+    {
+      program: "B Tech in Biotechnology",
+      para: ""
+    },
+    {
+      program: "B Tech in Semiconductor Technology",
+      para: ""
+    },
+  ]
   return (
     <>
       <Header />
       <main>
-        {/* Hero Section */}
         <section className="relative min-h-screen">
           <div
             className="absolute inset-0 z-0"
             style={{
-              backgroundImage: 'url("/bca-hons.webp")',
+              backgroundImage: 'url("/addmission.webp")',
               backgroundPosition: "center",
               backgroundSize: "cover",
               backgroundRepeat: "no-repeat",
@@ -167,11 +255,11 @@ export default function BcaPage() {
             <div className="grid md:grid-cols-2 gap-8">
               <div className="max-w-3xl hero-content">
                 <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight text-white pt-[8rem]">
-                  BCA (Hons) with Specialisation in
+                  Apply
+                  STUDY AT IILM UNIVERSITY
                 </h1>
                 <p className="text-lg mb-8 text-white/90 max-w-lg">
-                  Your pathway to advanced computing skills and a thriving IT
-                  career.
+                  ADMISSION OPEN FOR 2025
                 </p>
                 <div className="flex flex-wrap gap-4">
                   <Button className="bg-red-color text-white border-none rounded-none font-semibold text-base p-5">
@@ -271,31 +359,41 @@ export default function BcaPage() {
           </div>
         </section>
 
-        <section className="bg-[#F2F2F2]">
+        <section className="container mx-auto md:px-40">
           <div className="container mx-auto px-4 py-16">
-            <h2 className="text-3xl font-bold mb-6 text-[#333333]">
-              Programme Overview
+            <h2 className="text-3xl font-bold mb-12 text-[#333333]">
+              How to apply?
             </h2>
-            <p className="text-gray-600 text-base my-8">
-              The Bachelor of Computer Applications (Hons) is a 4-year
-              undergraduate degree designed to equip students with the skills,
-              knowledge, and practical experience required to excel in the
-              rapidly evolving field of computer applications and information
-              technology. Aligned with the National Education Policy (NEP) 2020,
-              this programme offers flexibility, multidisciplinary learning, and
-              a robust foundation in computing principles. This programme is
-              designed to equip students with practical and theoretical
-              knowledge in computer applications, offering two specialised
-              tracks to meet the demands of modern industries:
-            </p>
+            <div className="grid md:grid-cols-4 gap-5 mb-4">
+              {addmissionSteps.map((e) => (
+                <div className="p-5 h-56" style={{ border: '1px solid #81202c' }}>
+                  <p className="border-b border-gray-200 text-2xl text-[#303030] pb-4 mb-4 font-semibold">{e.step}</p>
+                  <p className="text-xl font-semibold mb-1 text-[#303030]">{e.head}</p>
+                  <p className="text-base text-[#303030] font-light">{e.para}</p>
+                </div>
+              ))}
+            </div>
           </div>
         </section>
-        {/* About Content */}
+
+        <section className="py-16 mt-20 bg-red-color-wo-hover">
+          <div className="container mx-auto md:px-40">
+            <p className="md:text-4xl text-lg text-white md:pb-5 mb-8 font-bold">Our Programs</p>
+            <div className="grid md:grid-cols-3 md:gap-8">
+              {programs.map((e) => (
+                <div className="p-8" style={{ background: '#91333E' }}>
+                  <p className="text-xl font-semibold text-white">{e.program}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
         <section
-          className="container mx-auto px-4 py-16 my-5"
+          className="container mx-auto md:px-40 px-4 py-16 my-5"
           style={{ textAlign: "-webkit-center" }}
         >
-          <img src="/bca-curriculum.webp" alt="Campus Life" className="" />
+          <img src="/advantage.webp" alt="Campus Life" className="" />
         </section>
 
         <section className="container mx-auto px-4 py-16 my-5">

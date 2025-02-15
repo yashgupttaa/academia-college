@@ -120,7 +120,7 @@ export default function AboutPage() {
       <main>
         <section className="relative min-h-screen">
           <div
-            className="absolute inset-0 z-0"
+            className="absolute inset-0 z-0 "
             style={{
               backgroundImage: 'url("/faculity.webp")',
               backgroundPosition: "center",
@@ -139,11 +139,11 @@ export default function AboutPage() {
               <p className="text-lg mb-8 text-white/90 max-w-lg">
                 Academia University focuses on building strong leadership through excellence in teaching and research.
               </p>
-              <div className="flex flex-wrap gap-4">
+              {/* <div className="flex flex-wrap gap-4">
                 <Button className="bg-red-color text-white border-none font-bold text-lg p-5 font-light">
                   Apply Now <ArrowRight className="ml-2" size={16} />
                 </Button>
-              </div>
+              </div> */}
             </div>
           </div>
         </section>

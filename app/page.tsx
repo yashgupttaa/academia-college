@@ -17,6 +17,7 @@ import { ReserchInnovation } from "@/components/sections/reserch-innovation"
 import { Events } from "@/components/sections/events"
 import { AlumniSpeaks } from "@/components/sections/alumni-speaks"
 import { UniversityGoals } from "@/components/sections/university-goals"
+import { OurSchools } from "@/components/sections/our-schools"
 
 export default function Home() {
   return (
@@ -30,6 +31,7 @@ export default function Home() {
         <Goals />
         <GlobalConnect />
         <ReserchInnovation />
+        <OurSchools />
         <UniversityGoals />
         <Events />
         <AlumniSpeaks />

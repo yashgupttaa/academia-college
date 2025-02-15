@@ -6,7 +6,7 @@ export function Hero() {
     <section className="relative min-h-screen">
       {/* Background Image with Clean Overlay */}
       <div
-        className="absolute inset-0 z-0"
+        className="absolute inset-0 z-0 bg-overlay-effect"
         style={{
           backgroundImage:
             'url("https://images.unsplash.com/photo-1562774053-701939374585?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2186&q=80")',
@@ -23,8 +23,8 @@ export function Hero() {
       <div className="relative z-10 container mx-auto px-4 h-screen flex items-center">
         <div className="max-w-3xl hero-content">
           <h2 className="text-xl font-medium mb-4 tracking-wide text-white">WELCOME TO ACADEMIA</h2>
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight text-white">
-            Best Online Education Expertise
+          <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight text-white">
+            EXPERIENCE EDUCATION THAT TRANSFORMS YOUR FUTURE
           </h1>
           <p className="text-lg mb-8 text-white/90 max-w-lg">
             Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the

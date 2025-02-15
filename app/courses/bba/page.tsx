@@ -6,7 +6,7 @@ import { ArrowRight } from "lucide-react";
 import { Newsletter } from "@/components/sections/newsletter";
 import { WhyChooseUs } from "@/components/sections/why-choose-us";
 
-export default function AboutPage() {
+export default function BbaPage() {
   const learning = [
     {
       title:
@@ -79,8 +79,11 @@ export default function AboutPage() {
                   business education experience.
                 </p>
                 <div className="flex flex-wrap gap-4">
-                  <Button className="bg-red-color text-white border-none font-bold text-lg p-5 font-light">
-                    Apply Now <ArrowRight className="ml-2" size={16} />
+                  <Button className="bg-red-color text-white border-none rounded-none font-semibold text-base p-5">
+                    Apply Now
+                  </Button>
+                  <Button className="bg-red-color text-white border-none rounded-none font-semibold text-base p-5">
+                    Download Brochure
                   </Button>
                 </div>
               </div>
