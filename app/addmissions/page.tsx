@@ -235,6 +235,45 @@ export default function AddmissionsPage() {
       para: ""
     },
   ]
+
+  const industry = [
+    {
+      src: "/indus-1.webp"
+    },
+    {
+      src: "/indus-2.webp"
+    },
+    {
+      src: "/indus-3.webp"
+    },
+    {
+      src: "/indus-4.webp"
+    },
+    {
+      src: "/indus-5.webp"
+    },
+    {
+      src: "/indus-6.webp"
+    },
+    {
+      src: "/indus-7.webp"
+    },
+    {
+      src: "/indus-8.webp"
+    },
+    {
+      src: "/indus-9.webp"
+    },
+    {
+      src: "/indus-10.webp"
+    },
+    {
+      src: "/indus-11.webp"
+    },
+    {
+      src: "/indus-12.webp"
+    }
+  ]
   return (
     <>
       <Header />
@@ -396,33 +435,39 @@ export default function AddmissionsPage() {
           <img src="/advantage.webp" alt="Campus Life" className="" />
         </section>
 
-        <section className="container mx-auto px-4 py-16 my-5">
-          <div className="flex flex-col md:flex-row gap-6">
-            {/* Left side: Accordion */}
-            <div className="bg-[#F6F2F2] p-8 shadow-md w-full md:w-1/3">
-              <ul className="space-y-4">
-                {sections.map((section) => (
-                  <li
-                    style={{ borderBottom: "2px solid #BCBECA" }}
-                    key={section.id}
-                    onClick={() => setActiveSection(section.id)}
-                    className={`cursor-pointer text-[#202020] py-5 text-2xl font-bold underline ${activeSection === section.id
-                      ? "red-color"
-                      : "text-black hover:text-[#81202c]"
-                      }`}
-                  >
-                    {section.title}
-                  </li>
-                ))}
-              </ul>
+        <section className="container mx-auto md:px-40">
+          <div className="container mx-auto px-4 py-16">
+            <h2 className="text-3xl font-bold mb-12 text-[#333333]">
+              Industry Collaborations
+            </h2>
+            <div className="grid md:grid-cols-3 gap-5 mb-4">
+              {industry.map((e) => (
+                <div className="border">
+                  <img src={e.src} className="w-full" alt="" />
+                </div>
+              ))}
             </div>
+          </div>
+        </section>
 
-            {/* Right side: Content */}
-            <div className="px-4 rounded-md w-full md:w-2/3">
-              {
-                sections.find((section) => section.id === activeSection)
-                  ?.content
-              }
+        <section className="py-16  mt-20 network_section">
+          <div className="container mx-auto px-4  md:px-40">
+            <div className="text-center mb-12">
+              <h3 className="md:text-5xl text-2xl text-[#303030] pb-3 font-bold">WHERE ALMA MATTERS</h3>
+              <p className="text-base font-semibold mb-4 text-[#303030]">
+              At IILM, we take pride in a strong alumni network of over 16,000 professionals excelling globally in 
+              diverse fields. Our alumni frequently engage with the campus, offering invaluable insights into industry 
+              trends and career guidance. This enduring connection fosters student growth and enhances placements, 
+              creating a vibrant community where alumni truly matter.
+              </p>
+            </div>
+            <div className="grid md:grid-cols-4 py-8 md:gap-8">
+              <div>
+                <img src="/alma-1.webp" alt="" style={{ borderRadius: '50%'}}/>
+                <div className="text-center pt-5 text-[#303030] font-semibold text-lg pb-3">Abhijeet Kumar</div>
+                <div className="text-center font-normal text-base pb-1">Company - Stolelam</div>
+                <div className="text-center font-normal text-base pb-2">Specialisation - Marketing</div>
+              </div>
             </div>
           </div>
         </section>

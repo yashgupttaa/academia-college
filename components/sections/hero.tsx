@@ -4,8 +4,7 @@ import { ArrowRight } from "lucide-react"
 export function Hero() {
   return (
     <section className="relative min-h-screen">
-      {/* Background Image with Clean Overlay */}
-      <div
+      {/* <div
         className="absolute inset-0 z-0 bg-overlay-effect"
         style={{
           backgroundImage:
@@ -15,11 +14,26 @@ export function Hero() {
           backgroundRepeat: "no-repeat",
         }}
       >
-        {/* Simple Semi-transparent Overlay */}
         <div className="absolute bg-[#B2D8D8]/75" />
+      </div> */}
+
+      <div className="absolute inset-0 z-0 overflow-hidden">
+        <video
+          className="w-full h-full object-cover"
+          autoPlay
+          loop
+          muted
+          playsInline
+        >
+          <source
+            src="/virtual_tour.mp4"
+            type="video/mp4"
+          />
+        </video>
+        {/* Simple Semi-transparent Overlay */}
+        <div className="absolute  bg-[#B2D8D8]/75" />
       </div>
 
-      {/* Content */}
       <div className="relative z-10 container mx-auto px-4 h-screen flex items-center">
         <div className="max-w-3xl hero-content">
           <h2 className="text-xl font-medium mb-4 tracking-wide text-white">WELCOME TO ACADEMIA</h2>
@@ -31,10 +45,10 @@ export function Hero() {
             blind texts.
           </p>
           <div className="flex flex-wrap gap-4">
-            <Button className="bg-red-color text-white border-none font-bold p-5">
+            <Button className="bg-red-color text-white border-none rounded-none font-semibold text-base p-5">
               GET STARTED NOW <ArrowRight className="ml-2" size={16} />
             </Button>
-            <Button variant="outline" className="bg-white border-white red-color font-bold hover:bg-white p-5">
+            <Button variant="outline" className="bg-red-color text-white border-none rounded-none font-semibold text-base p-5">
               VIEW COURSE <ArrowRight className="ml-2" size={16} />
             </Button>
           </div>

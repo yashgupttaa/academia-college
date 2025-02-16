@@ -217,6 +217,10 @@ body {
   border-right: 1px solid #FFFFFF;
 }
 
+.network_section{
+  background: linear-gradient(90deg, #ffffff 0%, #FFEEEE 9%, #ffffff 46%, #E3FFFD 68%, #FFEEEE  90%);
+}
+
 @media only screen and (min-width: 991px) {
   .header-bg {
     background-color: rgba(92, 48, 92, 0.2) !important;
