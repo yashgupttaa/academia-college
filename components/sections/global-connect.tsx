@@ -37,33 +37,33 @@ export function GlobalConnect() {
       <div className="container py-5 md:py-[3rem] mx-auto">
         <div className="grid md:grid-cols-2">
           <div className="global-connect md:p-[3rem] p-5">
-            <p className="text-3xl pb-5 md:pb-[2rem] font-bold text-white">GLOBAL CONNECT</p>
-            <p className="pb-4 md:pb-[1.5rem] text-white">Academia University’s Global Connect fosters international collaborations, offering study abroad,
+            <p className="larger-font pb-5 md:pb-[2rem] font-bold text-white">GLOBAL CONNECT</p>
+            <p className="pb-4 md:pb-[1.5rem] medium-font text-white">Academic College’s Global Connect fosters international collaborations, offering study abroad,
               global degrees, and cultural exposure. Alumni thrive globally, supported by partnerships across the UK, USA, Canada, and more.
             </p>
             <div className="flex gap-2 pb-2 items-center">
-              <ArrowRight stroke="#FFFFFF" size={18} />
-              <p className="text-white text-base">Social Initiatives</p>
+              <ArrowRight stroke="#FFFFFF" size={16} />
+              <p className="text-white smallest-font">Social Initiatives</p>
             </div>
             <div className="flex gap-2 pb-2 items-center">
-              <ArrowRight stroke="#FFFFFF" size={18} />
-              <p className="text-white text-base">Global Study</p>
+              <ArrowRight stroke="#FFFFFF" size={16} />
+              <p className="text-white smallest-font">Global Study</p>
             </div>
             <div className="flex gap-2 pb-2 items-center">
-              <ArrowRight stroke="#FFFFFF" size={18} />
-              <p className="text-white text-base">Partner Universities</p>
+              <ArrowRight stroke="#FFFFFF" size={16} />
+              <p className="text-white smallest-font">Partner Universities</p>
             </div>
             <div className="flex gap-2 pb-2 items-center">
-              <ArrowRight stroke="#FFFFFF" size={18} />
-              <p className="text-white text-base">Student Exchange Programme</p>
+              <ArrowRight stroke="#FFFFFF" size={16} />
+              <p className="text-white smallest-font">Student Exchange Programme</p>
             </div>
             <div className="flex bg-white gap-2 mt-[2rem] items-center px-4" style={{ width: 'fit-content' }}>
-              <button className="text-[#81202C] font-bold p-4">View All</button>
-              <ArrowRight stroke="#81202C" size={18} />
+              <button className="text-[#81202C] font-bold px-4 py-3 smaller-font">View All</button>
+              <ArrowRight stroke="#81202C" size={16} />
             </div>
           </div>
           <div>
-            <img src="https://iilm.ac.in/uploads/all/366/conversions/People-New-full.webp" className="h-full" alt="" />
+            <img src="/global-connect.webp" className="h-full" alt="" />
           </div>
         </div>
       </div>

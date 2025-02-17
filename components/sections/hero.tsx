@@ -1,22 +1,10 @@
 import { Button } from "@/components/ui/button"
 import { ArrowRight } from "lucide-react"
+import Link from "next/link"
 
 export function Hero() {
   return (
     <section className="relative min-h-screen">
-      {/* <div
-        className="absolute inset-0 z-0 bg-overlay-effect"
-        style={{
-          backgroundImage:
-            'url("https://images.unsplash.com/photo-1562774053-701939374585?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2186&q=80")',
-          backgroundPosition: "center",
-          backgroundSize: "cover",
-          backgroundRepeat: "no-repeat",
-        }}
-      >
-        <div className="absolute bg-[#B2D8D8]/75" />
-      </div> */}
-
       <div className="absolute inset-0 z-0 overflow-hidden">
         <video
           className="w-full h-full object-cover"
@@ -30,27 +18,24 @@ export function Hero() {
             type="video/mp4"
           />
         </video>
-        {/* Simple Semi-transparent Overlay */}
         <div className="absolute  bg-[#B2D8D8]/75" />
       </div>
 
       <div className="relative z-10 container mx-auto px-4 h-screen flex items-center">
         <div className="max-w-3xl hero-content">
-          <h2 className="text-xl font-medium mb-4 tracking-wide text-white">WELCOME TO ACADEMIA</h2>
-          <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight text-white">
+          <h1 className="largest-font font-bold mb-3 leading-tight text-white">
             EXPERIENCE EDUCATION THAT TRANSFORMS YOUR FUTURE
           </h1>
-          <p className="text-lg mb-8 text-white/90 max-w-lg">
-            Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the
-            blind texts.
+          <p className="smallest-font mb-8 text-white/90 max-w-lg">
+            Empowering Minds, Shaping Futures – Welcome to Academic College!
           </p>
           <div className="flex flex-wrap gap-4">
-            <Button className="bg-red-color text-white border-none rounded-none font-semibold text-base p-5">
-              GET STARTED NOW <ArrowRight className="ml-2" size={16} />
-            </Button>
-            <Button variant="outline" className="bg-red-color text-white border-none rounded-none font-semibold text-base p-5">
-              VIEW COURSE <ArrowRight className="ml-2" size={16} />
-            </Button>
+            <Link className="bg-red-color text-white border-none rounded-none font-semibold smaller-font px-5 py-2 flex items-center" href='/admissions'>
+              GET STARTED NOW <ArrowRight className="ml-2" size={14} />
+            </Link>
+            <Link className="bg-red-color text-white border-none rounded-none font-semibold smaller-font px-5 py-2 flex items-center" href='/courses'>
+              VIEW COURSE <ArrowRight className="ml-2" size={14} />
+            </Link>
           </div>
         </div>
       </div>

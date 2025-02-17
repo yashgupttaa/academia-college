@@ -35,28 +35,26 @@ export function UniversityGoals() {
   return (
     <section className="md:pt-16">
       <div className="container py-5 md:py-[3rem] mx-auto">
-        <div className="grid md:grid-cols-2">
-          <div>
-            <img src="/goals.png" className="h-full" alt="" />
-          </div>
+        <div className="grid md:grid-cols-2 items-center">
+          <img src="/goals.png" className="" alt="" />
           <div className="md:p-[3rem] p-5">
-            <p className="text-3xl pb-5 md:pb-[2rem] font-bold ">University Goals</p>
-            <p className="pb-4 md:pb-[1.5rem] text-2xl text-semibold blue-color pb-5">To excel in its educational endeavours, Academia's aims to be among India’s top B-schools by focusing on:</p>
+            <p className="larger-font pb-5 font-bold text-[#303030]">College Goals</p>
+            <p className="md:pb-[1.5rem] medium-font text-semibold blue-color pb-5">To excel in its educational endeavours, Academic's aims to be among India’s top B-schools by focusing on:</p>
             <div className="grid md:grid-cols-2 gap-5 py-5">
               <div className="goals-point">
-                <p className="pl-3 font-bold text-md">Student Outreach, Engagement, and Achievement.</p>
+                <p className="pl-3 font-bold smallest-font">Student Outreach, Engagement, and Achievement.</p>
               </div>
               <div className="goals-point">
-                <p className="pl-3 font-bold text-md">Institute-Industry-Society Interface engaging Indian and global businesses within a societal context.
+                <p className="pl-3 font-bold smallest-font">Institute-Industry-Society Interface engaging Indian and global businesses within a societal context.
                 </p>
               </div>
             </div>
             <div className="grid md:grid-cols-2 gap-5 pb-5 md:pt-[2rem]">
               <div className="goals-point">
-                <p className="pl-3 font-bold text-md">Thought Leadership through impactful research, training, and consultancy.</p>
+                <p className="pl-3 font-bold smallest-font">Thought Leadership through impactful research, training, and consultancy.</p>
               </div>
               <div className="goals-point">
-                <p className="pl-3 font-bold text-md">Recognition via rankings, ratings, and accreditations.</p>
+                <p className="pl-3 font-bold smallest-font">Recognition via rankings, ratings, and accreditations.</p>
               </div>
             </div>
             <div className="grid md:grid-cols-2 gap-5 pb-5 md:pt-[2rem]">

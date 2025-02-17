@@ -9,7 +9,7 @@ import { Newsletter } from "@/components/sections/newsletter";
 import { WhyChooseUs } from "@/components/sections/why-choose-us";
 import { useState } from "react";
 
-export default function AddmissionsPage() {
+export default function AdmissionsPage() {
   const sections = [
     {
       id: "eligibility",
@@ -146,7 +146,7 @@ export default function AddmissionsPage() {
   ];
 
   const [activeSection, setActiveSection] = useState("eligibility");
-  const addmissionSteps = [
+  const admissionSteps = [
     {
       step: "Step 01",
       head: "Register Yourself",
@@ -274,6 +274,33 @@ export default function AddmissionsPage() {
       src: "/indus-12.webp"
     }
   ]
+
+  const alma = [
+    {
+      src: '/alma-1.webp',
+      name: 'Abhijeet Kumar',
+      company: 'Company - Stolelam',
+      special: 'Specialisation - Marketing'
+    },
+    {
+      src: '/alma-2.webp',
+      name: 'Aditya Kumar Tripathi',
+      company: 'Company - Deloitte',
+      special: 'Specialisation - Finance'
+    },
+    {
+      src: '/alma-3.webp',
+      name: 'Ayushi Thakre',
+      company: 'Company - Blackrock',
+      special: 'Specialisation - Hr'
+    },
+    {
+      src: '/alma-4.webp',
+      name: 'Nandini Gautam',
+      company: 'Company - Aye Finance',
+      special: 'Specialisation - Finance'
+    },
+  ]
   return (
     <>
       <Header />
@@ -293,59 +320,58 @@ export default function AddmissionsPage() {
           <div className="relative z-10 container mx-auto px-4 h-screen flex items-center">
             <div className="grid md:grid-cols-2 gap-8">
               <div className="max-w-3xl hero-content">
-                <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight text-white pt-[8rem]">
-                  Apply
-                  STUDY AT IILM UNIVERSITY
+                <h1 className="largest-font font-bold mb-3 leading-tight text-white pt-[8rem]">
+                  Study at Academic College
                 </h1>
-                <p className="text-lg mb-8 text-white/90 max-w-lg">
-                  ADMISSION OPEN FOR 2025
+                <p className="smallest-font mb-8 text-white/90 max-w-lg">
+                  Your Future Starts Here – Apply Today and Take the First Step Toward Success!
                 </p>
                 <div className="flex flex-wrap gap-4">
-                  <Button className="bg-red-color text-white border-none rounded-none font-semibold text-base p-5">
+                  <Button className="bg-red-color text-white border-none rounded-none font-semibold smallest-font p-5">
                     Apply Now
                   </Button>
-                  <Button className="bg-red-color text-white border-none rounded-none font-semibold text-base p-5">
+                  <Button className="bg-red-color text-white border-none rounded-none font-semibold smallest-font p-5">
                     Download Brochure
                   </Button>
                 </div>
               </div>
-              <div className="md:w-[576px]">
+              <div className="lg:w-[480px] mt-5 lg:ml-12">
                 <div className="bg-white p-2 text-center">
-                  <p className="red-color text-xl font-light mb-2">
+                  <p className="red-color medium-font font-light mb-1">
                     REGISTER NOW!
                   </p>
-                  <p className="text-xl font-semibold mb-3">
+                  <p className="medium-font font-semibold mb-1">
                     SEAL YOUR SPOT FOR SUCCESS
                   </p>
-                  <p className="red-color text-xl font-bold m-0">
+                  <p className="red-color medium-font font-bold m-0">
                     ADMISSION OPEN FOR 2025
                   </p>
                 </div>
                 <div className="bg-blue-color px-3 py-2">
                   <input
-                    className="rounded p-2 w-full mb-2"
+                    className="rounded py-1 px-2 smaller-font w-full mb-2"
                     type="text"
                     placeholder="Enter Name"
                   />
                   <input
-                    className="rounded p-2 w-full mb-2"
+                    className="rounded  py-1 px-2 smaller-font w-full mb-2"
                     type="email"
                     placeholder="Enter Email Address"
                   />
                   <input
-                    className="rounded p-2 w-full mb-2"
+                    className="rounded  py-1 px-2 smaller-font w-full mb-2"
                     type="number"
                     placeholder="Enter Mobile Number"
                   />
                   <input
-                    className="rounded p-2 w-full mb-2"
+                    className="rounded  py-1 px-2 smaller-font w-full mb-2"
                     type="text"
                     placeholder="Enter OTP"
                   />
                   <div className="grid md:grid-cols-2 gap-2 mb-2">
                     <div>
                       <select
-                        className="rounded p-2 w-full"
+                        className="rounded  py-1 px-2 smaller-font w-full"
                         name="cars"
                         id="cars"
                       >
@@ -357,7 +383,7 @@ export default function AddmissionsPage() {
                     </div>
                     <div>
                       <select
-                        className="rounded p-2 w-full"
+                        className="rounded  py-1 px-2 smaller-font w-full"
                         name="cars"
                         id="cars"
                       >
@@ -368,7 +394,7 @@ export default function AddmissionsPage() {
                       </select>
                     </div>
                   </div>
-                  <select className="rounded p-2 w-full" name="cars" id="cars">
+                  <select className="rounded py-1 px-2 smaller-font w-full" name="cars" id="cars">
                     <option value="volvo">Select Programme</option>
                     <option value="saab">
                       BA/BA (Hons) in Hospitality and Service Management
@@ -383,32 +409,32 @@ export default function AddmissionsPage() {
                       name="vehicle1"
                       value="Bike"
                     />
-                    <label htmlFor="vehicle1" className="text-white">
+                    <label htmlFor="vehicle1" className="text-white text-xs">
                       I agree to receive information regarding my submitted
-                      enquiry on IILM.
+                      enquiry on Academic.
                     </label>
                   </div>
-                  <button className="bg-red-color-wo-hover rounded w-full text-white py-2 mb-4">
+                  <button className="bg-red-color-wo-hover rounded w-full text-white py-1 mb-2 smaller-font">
                     Submit
                   </button>
                 </div>
-                <div className="h-8  w-full bg-white"></div>
+                <div className="h-6  w-full bg-white"></div>
               </div>
             </div>
           </div>
         </section>
 
-        <section className="container mx-auto md:px-40">
-          <div className="container mx-auto px-4 py-16">
-            <h2 className="text-3xl font-bold mb-12 text-[#333333]">
+        <section className="container pt-5 mx-auto md:px-40">
+          <div className="container mx-auto px-4 lg:pt-16">
+            <h2 className="larger-font font-bold mb-12 text-[#333333]">
               How to apply?
             </h2>
             <div className="grid md:grid-cols-4 gap-5 mb-4">
-              {addmissionSteps.map((e) => (
-                <div className="p-5 h-56" style={{ border: '1px solid #81202c' }}>
-                  <p className="border-b border-gray-200 text-2xl text-[#303030] pb-4 mb-4 font-semibold">{e.step}</p>
-                  <p className="text-xl font-semibold mb-1 text-[#303030]">{e.head}</p>
-                  <p className="text-base text-[#303030] font-light">{e.para}</p>
+              {admissionSteps.map((e) => (
+                <div className="p-5 h-48" style={{ border: '1px solid #81202c' }}>
+                  <p className="border-b border-gray-200 medium-font text-[#303030] pb-4 mb-4 font-semibold">{e.step}</p>
+                  <p className="medium-font font-semibold mb-1 text-[#303030]">{e.head}</p>
+                  <p className="smallest-font text-[#303030] font-light">{e.para}</p>
                 </div>
               ))}
             </div>
@@ -416,12 +442,12 @@ export default function AddmissionsPage() {
         </section>
 
         <section className="py-16 mt-20 bg-red-color-wo-hover">
-          <div className="container mx-auto md:px-40">
-            <p className="md:text-4xl text-lg text-white md:pb-5 mb-8 font-bold">Our Programs</p>
-            <div className="grid md:grid-cols-3 md:gap-8">
+          <div className="container mx-auto md:px-40 px-4">
+            <p className="larger-font text-white mb-8 font-bold">Our Programmes</p>
+            <div className="grid md:grid-cols-3 md:gap-8 gap-4">
               {programs.map((e) => (
                 <div className="p-8" style={{ background: '#91333E' }}>
-                  <p className="text-xl font-semibold text-white">{e.program}</p>
+                  <p className="smallest-font font-semibold text-white">{e.program}</p>
                 </div>
               ))}
             </div>
@@ -429,14 +455,14 @@ export default function AddmissionsPage() {
         </section>
 
         <section
-          className="container mx-auto md:px-40 px-4 py-16 my-5"
+          className="container mt-5 mx-auto md:px-40 px-4 py-5"
           style={{ textAlign: "-webkit-center" }}
         >
-          <img src="/advantage.webp" alt="Campus Life" className="" />
+          <img src="/advantage.jpg" alt="Campus Life" className="" />
         </section>
 
         <section className="container mx-auto md:px-40">
-          <div className="container mx-auto px-4 py-16">
+          <div className="container mx-auto px-4 py-8">
             <h2 className="text-3xl font-bold mb-12 text-[#333333]">
               Industry Collaborations
             </h2>
@@ -450,24 +476,27 @@ export default function AddmissionsPage() {
           </div>
         </section>
 
-        <section className="py-16  mt-20 network_section">
+        <section className="py-16 mt-5 network_section">
           <div className="container mx-auto px-4  md:px-40">
             <div className="text-center mb-12">
-              <h3 className="md:text-5xl text-2xl text-[#303030] pb-3 font-bold">WHERE ALMA MATTERS</h3>
-              <p className="text-base font-semibold mb-4 text-[#303030]">
-              At IILM, we take pride in a strong alumni network of over 16,000 professionals excelling globally in 
-              diverse fields. Our alumni frequently engage with the campus, offering invaluable insights into industry 
-              trends and career guidance. This enduring connection fosters student growth and enhances placements, 
-              creating a vibrant community where alumni truly matter.
+              <h3 className="larger-font text-[#303030] pb-3 font-bold">Where Alma Matters</h3>
+              <p className="font-semibold smaller-font text-[#303030]">
+                At Academic, we take pride in a strong alumni network of over 16,000 professionals excelling globally in
+                diverse fields. Our alumni frequently engage with the campus, offering invaluable insights into industry
+                trends and career guidance. This enduring connection fosters student growth and enhances placements,
+                creating a vibrant community where alumni truly matter.
               </p>
             </div>
-            <div className="grid md:grid-cols-4 py-8 md:gap-8">
-              <div>
-                <img src="/alma-1.webp" alt="" style={{ borderRadius: '50%'}}/>
-                <div className="text-center pt-5 text-[#303030] font-semibold text-lg pb-3">Abhijeet Kumar</div>
-                <div className="text-center font-normal text-base pb-1">Company - Stolelam</div>
-                <div className="text-center font-normal text-base pb-2">Specialisation - Marketing</div>
-              </div>
+            <div className="grid md:grid-cols-4 py-8 md:gap-8 gap-16">
+              {alma.map((e) => (
+                <div className="text-center">
+                  <img src={e.src} alt="" className="mx-auto" style={{ borderRadius: '50%' }} />
+                  <div className="text-center pt-5 text-[#303030] font-semibold pb-2 medium-font">{e.name}</div>
+                  <div className="text-center font-normal smallest-font">{e.company}</div>
+                  <div className="text-center font-normal smaller-font">{e.special}</div>
+                </div>
+              ))}
+
             </div>
           </div>
         </section>

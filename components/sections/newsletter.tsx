@@ -7,12 +7,12 @@ export function Newsletter() {
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <div>
-            <h2 className="text-3xl font-bold text-white mb-2">Newsletter - Stay tune and get the latest update</h2>
-            <p className="text-white/80">Far far away, behind the word mountains</p>
+            <h2 className="larger-font font-bold text-white mb-2">Stay Updated with Our Latest News</h2>
+            <p className="text-white/80 medium-font">Subscribe to our newsletter and never miss an update on admissions, events, and more.</p>
           </div>
           <div className="flex gap-4">
-            <Input type="email" placeholder="Enter email address" className="bg-white" />
-            <Button variant="secondary">Subscribe</Button>
+            <Input type="email" placeholder="Enter email address" className="bg-white rounded-none" />
+            <Button variant="secondary" className="smallest-font bg-red-color text-white rounded-none">Subscribe</Button>
           </div>
         </div>
       </div>

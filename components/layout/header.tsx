@@ -11,9 +11,9 @@ export function Header() {
   return (
     <header className="absolute top-0 left-0 right-0 z-50">
       <div className="w-full px-4">
-        <div className="flex items-center justify-between py-4">
+        <div className="flex items-center justify-between">
           <Link href="/" className="text-white">
-            <img src="/university.png" alt="Logo" width={70} height={70} />
+            <img src="/academic-logo.png" alt="Logo" width={90} height={90} />
           </Link>
 
           <button
@@ -29,44 +29,46 @@ export function Header() {
           >
             <Link
               href="/"
-              className="text-white px-4 py-2 block hover:text-[#81202c]"
+              className="text-white text-sm px-4 py-2 block hover:text-[#81202c]"
+              style={{ margin: '0' }}
             >
               Home
             </Link>
             <div
               className="relative"
+              style={{ margin: '0' }}
               onMouseEnter={() => setIsCoursesOpen(true)}
               onMouseLeave={() => setIsCoursesOpen(false)}
             >
               <Link
                 href="/courses"
-                className="text-white flex items-center px-4 py-2 rounded hover:text-[#81202c]"
+                className="text-white text-sm flex items-center px-4 py-2 rounded hover:text-[#81202c]"
               >
-                All Courses <ChevronDown size={16} className="ml-1" />
+                Programmes <ChevronDown size={16} className="ml-1" />
               </Link>
               {isCoursesOpen && (
                 <div className="absolute left-0 mt-2 w-48 bg-blue-color text-white shadow-lg">
                   <Link
                     href="/courses/bba"
-                    className="block px-4 py-2 hover:bg-[#81202c]"
+                    className="block text-sm px-4 py-2 hover:bg-[#81202c]"
                   >
                     BBA
                   </Link>
                   <Link
                     href="/courses/bca-hons"
-                    className="block px-4 py-2 hover:bg-[#81202c]"
+                    className="block text-sm px-4 py-2 hover:bg-[#81202c]"
                   >
                     BCA (HONS)
                   </Link>
                   <Link
                     href="/courses/marketing"
-                    className="block px-4 py-2 hover:bg-[#81202c]"
+                    className="block text-sm px-4 py-2 hover:bg-[#81202c]"
                   >
                     M Tech
                   </Link>
                   <Link
                     href="/courses/marketing"
-                    className="block px-4 py-2 hover:bg-[#81202c]"
+                    className="block text-sm px-4 py-2 hover:bg-[#81202c]"
                   >
                     B Tech
                   </Link>
@@ -76,31 +78,36 @@ export function Header() {
             </div>
             <Link
               href="/about"
-              className="text-white px-4 py-2 block hover:text-[#81202c]"
+              className="text-white text-sm px-4 py-2 block hover:text-[#81202c]"
+              style={{ margin: '0' }}
             >
               About
             </Link>
             <Link
               href="/faculity"
-              className="text-white px-4 py-2 block hover:text-[#81202c]"
+              className="text-white text-sm px-4 py-2 block hover:text-[#81202c]"
+              style={{ margin: '0' }}
             >
-              Faculity
+              Faculty
             </Link>
             <Link
-              href="/addmissions"
-              className="text-white px-4 py-2 block hover:text-[#81202c]"
+              href="/admissions"
+              className="text-white text-sm px-4 py-2 block hover:text-[#81202c]"
+              style={{ margin: '0' }}
             >
               Admissions
             </Link>
             <Link
               href="/contact"
-              className="text-white px-4 py-2 block hover:text-[#81202c]"
+              className="text-white text-sm px-4 py-2 block hover:text-[#81202c]"
+              style={{ margin: '0' }}
             >
               Contact
             </Link>
             <Link
               href="/campus-life"
-              className="text-white px-4 py-2 block hover:text-[#81202c]"
+              className="text-white text-sm px-4 py-2 block hover:text-[#81202c]"
+              style={{ margin: '0' }}
             >
               Campus Life
             </Link>
@@ -109,27 +116,27 @@ export function Header() {
           <div className="hidden md:flex items-center space-x-4">
             <Link
               href="#"
-              className="text-[#B2D8D8] p-2 rounded-full hover:bg-white/30 social-icons"
+              className="text-[#B2D8D8] p-1 rounded-full hover:bg-white/30 social-icons"
             >
-              <Facebook size={20} color="#1a305c" />
+              <Facebook size={16} color="#1a305c" />
             </Link>
             <Link
               href="#"
-              className="text-[#B2D8D8] p-2 rounded-full hover:bg-white/30 social-icons"
+              className="text-[#B2D8D8] p-1 rounded-full hover:bg-white/30 social-icons"
             >
-              <Instagram size={20} color="#1a305c" />
+              <Instagram size={16} color="#1a305c" />
             </Link>
             <Link
               href="#"
-              className="text-[#B2D8D8] p-2 rounded-full hover:bg-white/30 social-icons"
+              className="text-[#B2D8D8] p-1 rounded-full hover:bg-white/30 social-icons"
             >
-              <Twitter size={20} color="#1a305c" />
+              <Twitter size={16} color="#1a305c" />
             </Link>
             <Link
               href="#"
-              className="text-[#B2D8D8] p-2 rounded-full hover:bg-white/30 social-icons"
+              className="text-[#B2D8D8] p-1 rounded-full hover:bg-white/30 social-icons"
             >
-              <Youtube size={20} color="#1a305c" />
+              <Youtube size={16} color="#1a305c" />
             </Link>
           </div>
         </div>

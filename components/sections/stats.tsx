@@ -15,8 +15,8 @@ export function Stats() {
           {stats.map((stat, index) => (
             <div key={index} className="text-center">
               <stat.icon className="w-12 h-12 mx-auto mb-4 text-teal-500 red-color" />
-              <h3 className="text-4xl font-bold mb-2 red-color">{stat.count}</h3>
-              <p className="text-gray-600 text-sm blue-color">{stat.label}</p>
+              <h3 className="largest-font font-bold mb-2 red-color">{stat.count}</h3>
+              <p className="text-gray-600 smallest-font blue-color">{stat.label}</p>
             </div>
           ))}
         </div>
