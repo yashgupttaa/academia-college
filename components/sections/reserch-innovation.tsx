@@ -3,7 +3,7 @@ export function ReserchInnovation() {
     <>
       <section className="pt-16 bg-gray-50 reserch-innovation" id="reserch">
         <div className="container md:pt-[3rem] mx-auto">
-          <div className="md:w-[600px] md:pb-5">
+          <div className="md:w-[600px] md:pb-5 px-4 md:px-0">
             <p className="largest-font font-extrabold text-white pb-5">A HUB FOR RESEARCH & INNOVATION</p>
             <p className="larger-font font-semibold text-white pb-3">Driving Impact through Research & Consultancy</p>
             <p className="text-white smallest-font font-medium pb-5 md:pb-[2rem]">

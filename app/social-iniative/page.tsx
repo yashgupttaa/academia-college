@@ -1,9 +1,12 @@
 import { Footer } from "@/components/layout/footer"
 import { Header } from "@/components/layout/header"
-import { Card, CardContent } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
-import { ArrowRight } from "lucide-react"
 import { Newsletter } from "@/components/sections/newsletter"
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Social Initiatives at Academic College | Making a Positive Impact",
+  description: "At Academic College, we are committed to giving back to the community through various social initiatives. From education and healthcare programs to environmental sustainability efforts, our students and faculty work together to create meaningful change.",
+};
 
 export default function SocialIniativePage() {
   return (

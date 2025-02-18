@@ -27,7 +27,7 @@ export function Testimonials() {
     <section className="py-16 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h3 className="largest-font text-white pb-3 font-bold blue-color">Our Successful Students</h3>
+          <h3 className="largest-font text-white pb-3 font-bold blue-color">Our Successful Alumni</h3>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8">

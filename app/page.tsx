@@ -18,6 +18,12 @@ import { Events } from "@/components/sections/events"
 import { AlumniSpeaks } from "@/components/sections/alumni-speaks"
 import { UniversityGoals } from "@/components/sections/university-goals"
 import { OurSchools } from "@/components/sections/our-schools"
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: "Welcome to Academic College | Excellence in Education",
+  description: "Explore top academic programs, vibrant campus life, and endless opportunities at Academic College. Join us to shape your future today!",
+};
 
 export default function Home() {
   return (

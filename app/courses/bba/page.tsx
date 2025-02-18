@@ -1,55 +1,18 @@
 import { Footer } from "@/components/layout/footer";
 import { Header } from "@/components/layout/header";
-import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
 import { Newsletter } from "@/components/sections/newsletter";
 import { WhyChooseUs } from "@/components/sections/why-choose-us";
+import type { Metadata } from "next";
+import Link from "next/link";
+import { ContactForm } from '@/components/sections/contact-form'
+
+export const metadata: Metadata = {
+  title: "Bachelor of Business Administration (BBA) Program | Academic College",
+  description: "Explore the Bachelor of Business Administration (BBA) program at Academic College. Gain the essential skills and knowledge needed to succeed in today’s dynamic business world. ",
+};
 
 export default function BbaPage() {
-  const learning = [
-    {
-      title:
-        "Deliver Holistic Education focusing on Intellectual Rigor and Experiential Learning",
-      para: "To provide an education that prepares students for successful careers by combining intellectual rigour with experiential activities that prepare students to adapt and thrive in dynamic real-world contexts.",
-    },
-    {
-      title: "Enhance Cognitive Flexibility",
-      para: "To equip students with the ability to think critically and make sound decisions in a rapidly evolving world thereby developing students’ adaptability and entrepreneurial mindset to thrive in uncertainty and drive innovative solutions.",
-    },
-    {
-      title: "Encourage Innovation, Research and Knowledge Advancement",
-      para: "To promote a culture of innovation, experimentation, scholarly research and creative pursuits, encouraging students to challenge assumptions, seek creative solutions contribute to societal betterment and advancement of knowledge.",
-    },
-    {
-      title: "Enhance Digital Literacy and Competency",
-      para: "To equip students with the skills to use digital tools to evaluate, filter, and analyse digital content for credibility, relevance, and accuracy, for both career readiness and personal tasks, ensuring that technology empowers them in all aspects of life.",
-    },
-    {
-      title: "Cultivate Teamwork and Communication Skills",
-      para: "To enhance teamwork and communication by fostering clear, efficient exchanges of information and encouraging active listening, enabling students to collaborate effectively in diverse teams and work environments.",
-    },
-    {
-      title: "Engage in Community-Based Learning",
-      para: "To provide opportunities for service learning, internships, and other community-based activities, fostering meaningful partnerships at local, national, and international levels.",
-    },
-    {
-      title: "Foster an Inclusive and Socially Responsible Community",
-      para: "To cultivate a diverse and inclusive community committed to social responsibility, global awareness, and civic engagement.",
-    },
-    {
-      title: "Prepare Responsible Global Citizens and Leaders",
-      para: "We provide students with the knowledge, skills, and experiences needed to make a positive impact and take on leadership roles globally.",
-    },
-    {
-      title: "Promote Sustainability and Environmental Responsibility",
-      para: "Committed to sustainability by implementing environmentally friendly practices and reducing the college’s ecological footprint.",
-    },
-    {
-      title: "Support Self-directed and Continuous Learning",
-      para: "We provide an environment that empowers students to take control of their educational journey, fostering independence and a culture of lifelong learning.",
-    },
-  ];
   return (
     <>
       <Header />
@@ -78,99 +41,15 @@ export default function BbaPage() {
                   business education experience.
                 </p>
                 <div className="flex flex-wrap gap-4">
-                  <Button className="bg-red-color text-white border-none rounded-none font-semibold smallest-font p-5">
+                  <Link href='/admissions' className="bg-red-color text-white border-none rounded-none font-semibold smallest-font px-5 py-2">
                     Apply Now
-                  </Button>
-                  <Button className="bg-red-color text-white border-none rounded-none font-semibold smallest-font p-5">
+                  </Link>
+                  <a href='/BBA-brochure.pdf' target="_blank" download className="bg-red-color text-white border-none rounded-none font-semibold smallest-font flex items-center px-5">
                     Download Brochure
-                  </Button>
+                  </a>
                 </div>
               </div>
-              <div className="lg:w-[480px] mt-5 lg:ml-12">
-                <div className="bg-white p-2 text-center">
-                  <p className="red-color medium-font font-light mb-1">
-                    REGISTER NOW!
-                  </p>
-                  <p className="medium-font font-semibold mb-1">
-                    SEAL YOUR SPOT FOR SUCCESS
-                  </p>
-                  <p className="red-color medium-font font-bold m-0">
-                    ADMISSION OPEN FOR 2025
-                  </p>
-                </div>
-                <div className="bg-blue-color px-3 py-2">
-                  <input
-                    className="rounded py-1 px-2 smaller-font w-full mb-2"
-                    type="text"
-                    placeholder="Enter Name"
-                  />
-                  <input
-                    className="rounded  py-1 px-2 smaller-font w-full mb-2"
-                    type="email"
-                    placeholder="Enter Email Address"
-                  />
-                  <input
-                    className="rounded  py-1 px-2 smaller-font w-full mb-2"
-                    type="number"
-                    placeholder="Enter Mobile Number"
-                  />
-                  <input
-                    className="rounded  py-1 px-2 smaller-font w-full mb-2"
-                    type="text"
-                    placeholder="Enter OTP"
-                  />
-                  <div className="grid md:grid-cols-2 gap-2 mb-2">
-                    <div>
-                      <select
-                        className="rounded  py-1 px-2 smaller-font w-full"
-                        name="cars"
-                        id="cars"
-                      >
-                        <option value="volvo">Select State</option>
-                        <option value="saab">Tamilnadu</option>
-                        <option value="mercedes">Uttar Pradesh</option>
-                        <option value="audi">Gujrat</option>
-                      </select>
-                    </div>
-                    <div>
-                      <select
-                        className="rounded  py-1 px-2 smaller-font w-full"
-                        name="cars"
-                        id="cars"
-                      >
-                        <option value="volvo">Select City</option>
-                        <option value="saab">Tamilnadu</option>
-                        <option value="mercedes">Uttar Pradesh</option>
-                        <option value="audi">Gujrat</option>
-                      </select>
-                    </div>
-                  </div>
-                  <select className="rounded py-1 px-2 smaller-font w-full" name="cars" id="cars">
-                    <option value="volvo">Select Programme</option>
-                    <option value="saab">
-                      BA/BA (Hons) in Hospitality and Service Management
-                    </option>
-                    <option value="mercedes">MBA in Energy Management</option>
-                    <option value="audi">BBA Aviation Management</option>
-                  </select>
-                  <div className="flex gap-4 my-5">
-                    <input
-                      type="checkbox"
-                      id="vehicle1"
-                      name="vehicle1"
-                      value="Bike"
-                    />
-                    <label htmlFor="vehicle1" className="text-white text-xs">
-                      I agree to receive information regarding my submitted
-                      enquiry on Academic.
-                    </label>
-                  </div>
-                  <button className="bg-red-color-wo-hover rounded w-full text-white py-1 mb-2 smaller-font">
-                    Submit
-                  </button>
-                </div>
-                <div className="h-6  w-full bg-white"></div>
-              </div>
+              <ContactForm />
             </div>
           </div>
         </section>

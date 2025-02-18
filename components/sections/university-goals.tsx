@@ -36,7 +36,7 @@ export function UniversityGoals() {
     <section className="md:pt-16">
       <div className="container py-5 md:py-[3rem] mx-auto">
         <div className="grid md:grid-cols-2 items-center">
-          <img src="/goals.png" className="" alt="" />
+          <img src="/goals.png" className="md:px-0 px-4" alt="" />
           <div className="md:p-[3rem] p-5">
             <p className="larger-font pb-5 font-bold text-[#303030]">College Goals</p>
             <p className="md:pb-[1.5rem] medium-font text-semibold blue-color pb-5">To excel in its educational endeavours, Academic's aims to be among India’s top B-schools by focusing on:</p>

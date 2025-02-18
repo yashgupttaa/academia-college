@@ -1,10 +1,4 @@
-import type { Metadata } from 'next'
 import './globals.css'
-
-export const metadata: Metadata = {
-  title: 'v0 App',
-  description: 'Created with v0',
-}
 
 export default function RootLayout({
   children,
@@ -13,6 +7,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <script src="https://cdn.jsdelivr.net/npm/purecounterjs@1.0.0/dist/purecounter.min.js"></script>
+      </head>
       <body>{children}</body>
     </html>
   )

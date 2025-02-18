@@ -51,7 +51,7 @@ export function Footer() {
             <h4 className="font-bold mb-4 medium-font blue-color">Quick Links</h4>
             <ul className="space-y-2">
               <li>
-                <Link href="/contact" className="text-gray-600 smallest-font hover:text-[#81202c]">
+                <Link href="/contact-us" className="text-gray-600 smallest-font hover:text-[#81202c]">
                   Contact Us
                 </Link>
               </li>
@@ -73,6 +73,11 @@ export function Footer() {
               <li>
                 <Link href="/social-iniative" className="text-gray-600 smallest-font hover:text-[#81202c]">
                   Social Initiatives
+                </Link>
+              </li>
+              <li>
+                <Link href="/blogs" className="text-gray-600 smallest-font hover:text-[#81202c]">
+                  Blogs
                 </Link>
               </li>
             </ul>

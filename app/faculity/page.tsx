@@ -1,11 +1,14 @@
 import { Footer } from "@/components/layout/footer"
 import { Header } from "@/components/layout/header"
-import { Card, CardContent } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
-import { ArrowRight } from "lucide-react"
 import { Newsletter } from "@/components/sections/newsletter"
+import type { Metadata } from "next";
 
-export default function AboutPage() {
+export const metadata: Metadata = {
+  title: "Our Esteemed Faculty | Academic College",
+  description: "Meet the highly qualified and experienced faculty members at Academic College. Our professors and educators are dedicated to providing quality education, mentorship, and guidance to help students excel in their academic and professional journeys.",
+};
+
+export default function FacultyPage() {
   const dean = [
     {
       src: "/nihar-amoncar.webp",

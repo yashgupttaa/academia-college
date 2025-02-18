@@ -1,12 +1,9 @@
 import { Footer } from "@/components/layout/footer"
 import { Header } from "@/components/layout/header"
-import { Card, CardContent } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
-import { ArrowRight } from "lucide-react"
 import { Newsletter } from "@/components/sections/newsletter"
 
 export default function BlogDetailsPage() {
- 
+
   return (
     <>
       <Header />
@@ -15,7 +12,7 @@ export default function BlogDetailsPage() {
           <div
             className="absolute inset-0 z-0"
             style={{
-              backgroundImage: 'url("/about-bg.webp")',
+              backgroundImage: 'url("/blog-8.jpg")',
               backgroundPosition: "center",
               backgroundSize: "cover",
               backgroundRepeat: "no-repeat",
@@ -26,16 +23,8 @@ export default function BlogDetailsPage() {
           <div className="relative z-10 container mx-auto px-4 h-screen flex items-center">
             <div className="max-w-3xl hero-content">
               <h1 className="largest-font font-bold mb-3 leading-tight text-white">
-                About Academic
+                Navigating the Path To Top MBA Colleges in India and Private Universities in Gurgaon
               </h1>
-              <p className="smallest-font mb-8 text-white/90 max-w-lg">
-                A Legacy of Learning, A Future of Possibilities – Get to Know Us.
-              </p>
-              <div className="flex flex-wrap gap-4">
-                <Button className="bg-red-color text-white border-none rounded-none font-semibold smaller-font px-5 py-2">
-                  Apply Now
-                </Button>
-              </div>
             </div>
           </div>
         </section>

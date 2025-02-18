@@ -1,9 +1,12 @@
 import { Footer } from "@/components/layout/footer"
 import { Header } from "@/components/layout/header"
-import { Card, CardContent } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
-import { ArrowRight } from "lucide-react"
 import { Newsletter } from "@/components/sections/newsletter"
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Campus Life | Academic College",
+  description: "Experience the vibrant campus life at Academic College. From student clubs to events, discover a community that inspires learning and growth.",
+};
 
 export default function AboutPage() {
   return (

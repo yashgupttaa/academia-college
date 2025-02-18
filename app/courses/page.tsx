@@ -4,6 +4,12 @@ import { Button } from "@/components/ui/button";
 import { Newsletter } from "@/components/sections/newsletter";
 import Link from "next/link"
 import { ArrowRight } from "lucide-react";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Academic Programs | Academic College",
+  description: "Explore a wide range of academic programs at Academic College. Find undergraduate, postgraduate, and specialized courses designed for your success.",
+};
 
 export default function CoursesPage() {
   const programmes = [

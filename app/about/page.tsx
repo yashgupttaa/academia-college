@@ -4,6 +4,12 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { ArrowRight } from "lucide-react"
 import { Newsletter } from "@/components/sections/newsletter"
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: "About Us | Academic College",
+  description: "Discover the legacy, vision, and values of Academic College. Learn how we empower students through excellence in education and innovation.",
+};
 
 export default function AboutPage() {
   const learning = [

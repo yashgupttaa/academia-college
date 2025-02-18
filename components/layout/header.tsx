@@ -7,6 +7,23 @@ import { Menu, X, Facebook, Instagram, Twitter, Youtube, ChevronDown } from "luc
 export function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   const [isCoursesOpen, setIsCoursesOpen] = useState(false)
+  const [timeoutId, setTimeoutId] = useState<NodeJS.Timeout | null>(null);
+
+  const handleMouseEnter = () => {
+    if (timeoutId) {
+      clearTimeout(timeoutId);
+      setTimeoutId(null);
+    }
+    setIsCoursesOpen(true);
+  };
+
+  const handleMouseLeave = () => {
+    const newTimeoutId = setTimeout(() => {
+      setIsCoursesOpen(false);
+    }, 200);
+
+    setTimeoutId(newTimeoutId);
+  };
 
   return (
     <header className="absolute top-0 left-0 right-0 z-50">
@@ -37,8 +54,8 @@ export function Header() {
             <div
               className="relative"
               style={{ margin: '0' }}
-              onMouseEnter={() => setIsCoursesOpen(true)}
-              onMouseLeave={() => setIsCoursesOpen(false)}
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
             >
               <Link
                 href="/courses"
@@ -98,7 +115,7 @@ export function Header() {
               Admissions
             </Link>
             <Link
-              href="/contact"
+              href="/contact-us"
               className="text-white text-sm px-4 py-2 block hover:text-[#81202c]"
               style={{ margin: '0' }}
             >

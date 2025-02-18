@@ -1,12 +1,15 @@
 import { Footer } from "@/components/layout/footer"
 import { Header } from "@/components/layout/header"
-import { Card, CardContent } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
-import { ArrowRight } from "lucide-react"
 import { Newsletter } from "@/components/sections/newsletter"
 import Link from "next/link";
+import type { Metadata } from "next";
 
-export default function AboutPage() {
+export const metadata: Metadata = {
+  title: "Blogs | Academic College",
+  description: "Stay updated with the latest news, insights, and educational trends from Academic College. Explore expert articles and student stories.",
+};
+
+export default function BlogsPage() {
   return (
     <>
       <Header />
@@ -15,7 +18,7 @@ export default function AboutPage() {
           <div
             className="absolute inset-0 z-0"
             style={{
-              backgroundImage: 'url("/campus-life.webp")',
+              backgroundImage: 'url("/bsc-math.webp")',
               backgroundPosition: "center",
               backgroundSize: "cover",
               backgroundRepeat: "no-repeat",
@@ -26,11 +29,10 @@ export default function AboutPage() {
           <div className="relative z-10 container mx-auto px-4 h-screen flex items-center">
             <div className="max-w-3xl hero-content">
               <h1 className="largest-font font-bold mb-3 leading-tight text-white">
-                Campus life
+                Academic Blogs
               </h1>
               <p className="smallest-font mb-8 text-white/90 max-w-lg">
-                A Thriving Campus Where Learning Meets Life – Discover Your
-                Second Home.
+                Stay Informed, Stay Inspired – Read Our Latest Articles.
               </p>
             </div>
           </div>
@@ -44,9 +46,9 @@ export default function AboutPage() {
             {/* Blog 1 */}
             <div className="mb-5">
               <img
-                src="/campus-life.webp"
+                src="/blog-8.jpg"
                 alt="Campus Life"
-                className="w-full object-cover"
+                className="w-full h-44 object-cover"
               />
               <p
                 className="text-[#303030] smaller-font pb-3 mt-4"
@@ -65,9 +67,9 @@ export default function AboutPage() {
             {/* Blog 2 */}
             <div className="mb-5">
               <img
-                src="/campus-life.webp"
+                src="/blog-2.png"
                 alt="Student Life"
-                className="w-full object-cover"
+                className="w-full object-cover h-44"
               />
               <p
                 className="text-[#303030] smaller-font pb-3 mt-4"
@@ -86,9 +88,9 @@ export default function AboutPage() {
             {/* Blog 3 */}
             <div className="mb-5">
               <img
-                src="/campus-life.webp"
+                src="/blog-3.jpg"
                 alt="Research Opportunities"
-                className="w-full object-cover"
+                className="w-full h-44 object-cover"
               />
               <p
                 className="text-[#303030] smaller-font pb-3 mt-4"
@@ -107,9 +109,9 @@ export default function AboutPage() {
             {/* Blog 4 */}
             <div className="mb-5">
               <img
-                src="/campus-life.webp"
+                src="/blog-4.webp"
                 alt="Campus Resources"
-                className="w-full object-cover"
+                className="w-full h-44 object-cover"
               />
               <p
                 className="text-[#303030] smaller-font pb-3 mt-4"
@@ -128,9 +130,9 @@ export default function AboutPage() {
             {/* Blog 5 */}
             <div className="mb-5">
               <img
-                src="/campus-life.webp"
+                src="/blog-5.jpg"
                 alt="Networking Opportunities"
-                className="w-full object-cover"
+                className="w-full h-44 object-cover"
               />
               <p
                 className="text-[#303030] smaller-font pb-3 mt-4"
@@ -149,9 +151,9 @@ export default function AboutPage() {
             {/* Blog 6 */}
             <div className="mb-5">
               <img
-                src="/campus-life.webp"
+                src="/blog-7.webp"
                 alt="Student Clubs"
-                className="w-full object-cover"
+                className="w-full object-cover h-44"
               />
               <p
                 className="text-[#303030] smaller-font pb-3 mt-4"
