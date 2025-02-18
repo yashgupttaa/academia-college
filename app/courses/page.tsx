@@ -15,72 +15,72 @@ export default function CoursesPage() {
   const programmes = [
     {
       src: "/bca-hons.webp",
-      link: "/bca-hons",
+      link: "courses/bca-hons",
       programme: "BCA (Hons) with Specialisation in"
     },
     {
       src: "/bca.webp",
-      link: "/bca",
+      link: "courses/bca-hons",
       programme: "BCA"
     },
     {
       src: "/btech_cse.webp",
-      link: "/btech-cse",
+      link: "courses/bca-hons",
       programme: "B Tech in CSE"
     },
     {
       src: "/btech_eec.webp",
-      link: "/bca-hons",
+      link: "courses/bca-hons",
       programme: "B Tech in Electronics & Communication Engineering (Ece) in Collaboration with L&T"
     },
     {
       src: "/bba.webp",
-      link: "/courses/bba",
+      link: "courses/bca-hons",
       programme: "Bachelor of Business Administration (BBA)"
     },
     {
       src: "/ballb-hons.webp",
-      link: "/bca-hons",
+      link: "courses/bca-hons",
       programme: "BA LLB (Hons)"
     },
     {
       src: "/bba-llb.webp",
-      link: "/bca-hons",
+      link: "courses/bca-hons",
       programme: "BBA LLB (Hons)"
     },
     {
       src: "/btech_bio.webp",
-      link: "/bca-hons",
+      link: "courses/bca-hons",
       programme: "B Tech in Bioinformatics"
     },
     {
       src: "/bsc-hons.webp",
-      link: "/bca-hons",
+      link: "courses/bca-hons",
       programme: "BSc (Hons) in Forensic Science"
     },
     {
       src: "/bsc-math.webp",
-      link: "/bca-hons",
+      link: "courses/bca-hons",
       programme: "BSc Mathematics with Data Science"
     },
     {
       src: "/btech_food.webp",
-      link: "/bca-hons",
+      link: "courses/bca-hons",
       programme: "B Tech Food Technology"
     },
     {
       src: "/btech_robo.webp",
-      link: "/bca-hons",
+      link: "courses/bca-hons",
       programme: "B Tech in Robotics & Artificial Intelligence (AI)"
     },
     {
       src: "/btech_micro.webp",
-      link: "/bca-hons",
+      link: "courses/bca-hons",
       programme: "B Tech in CSE in collaboration with Microsoft"
     },
     {
       src: "/btech_ibm.webp",
-      link: "/bca-hons",
+      link: "courses/bca-hons",
       programme: "B Tech in CSE with specialisation in AI-ML in collaboration with IBM"
     },
   ];
