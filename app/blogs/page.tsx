@@ -41,9 +41,10 @@ export default function AboutPage() {
             Academic Blogs
           </p>
           <div className="grid md:grid-cols-3 gap-5 pt-5">
+            {/* Blog 1 */}
             <div className="mb-5">
               <img
-                src="/blog-1.webp"
+                src="/campus-life.webp"
                 alt="Campus Life"
                 className="w-full object-cover"
               />
@@ -54,119 +55,117 @@ export default function AboutPage() {
                 21 Aug, 2024
               </p>
               <p className="text-[#303030] medium-font mb-3 mt-3">
-                Navigating the Path To Top MBA Colleges in India and Private
-                Universities in Gurgaon
+                Navigating the Path To Top MBA Colleges in India and Private Universities in Gurgaon
               </p>
-              <Link href="#" className="red-color underline">
+              <Link href="/blog-details-0" className="red-color underline">
                 READ MORE
               </Link>
             </div>
 
+            {/* Blog 2 */}
             <div className="mb-5">
               <img
-                src="/blog-1.webp"
-                alt="Campus Life"
+                src="/campus-life.webp"
+                alt="Student Life"
                 className="w-full object-cover"
               />
               <p
                 className="text-[#303030] smaller-font pb-3 mt-4"
                 style={{ borderBottom: "2px solid #303030" }}
               >
-                21 Aug, 2024
+                15 Sep, 2024
               </p>
               <p className="text-[#303030] medium-font mb-3 mt-3">
-                Navigating the Path To Top MBA Colleges in India and Private
-                Universities in Gurgaon
+                Exploring Student Life at Our University
               </p>
-              <Link href="#" className="red-color underline">
+              <Link href="/blog-details-1" className="red-color underline">
                 READ MORE
               </Link>
             </div>
 
+            {/* Blog 3 */}
             <div className="mb-5">
               <img
-                src="/blog-1.webp"
-                alt="Campus Life"
+                src="/campus-life.webp"
+                alt="Research Opportunities"
                 className="w-full object-cover"
               />
               <p
                 className="text-[#303030] smaller-font pb-3 mt-4"
                 style={{ borderBottom: "2px solid #303030" }}
               >
-                21 Aug, 2024
+                10 Oct, 2024
               </p>
               <p className="text-[#303030] medium-font mb-3 mt-3">
-                Navigating the Path To Top MBA Colleges in India and Private
-                Universities in Gurgaon
+                Research Opportunities for Students
               </p>
-              <Link href="#" className="red-color underline">
+              <Link href="/blog-details-2" className="red-color underline">
                 READ MORE
               </Link>
             </div>
 
+            {/* Blog 4 */}
             <div className="mb-5">
               <img
-                src="/blog-1.webp"
-                alt="Campus Life"
+                src="/campus-life.webp"
+                alt="Campus Resources"
                 className="w-full object-cover"
               />
               <p
                 className="text-[#303030] smaller-font pb-3 mt-4"
                 style={{ borderBottom: "2px solid #303030" }}
               >
-                21 Aug, 2024
+                25 Oct, 2024
               </p>
               <p className="text-[#303030] medium-font mb-3 mt-3">
-                Navigating the Path To Top MBA Colleges in India and Private
-                Universities in Gurgaon
+                Unveiling the Best Campus Resources for Students
               </p>
-              <Link href="#" className="red-color underline">
+              <Link href="/blog-details-3" className="red-color underline">
                 READ MORE
               </Link>
             </div>
 
+            {/* Blog 5 */}
             <div className="mb-5">
               <img
-                src="/blog-1.webp"
-                alt="Campus Life"
+                src="/campus-life.webp"
+                alt="Networking Opportunities"
                 className="w-full object-cover"
               />
               <p
                 className="text-[#303030] smaller-font pb-3 mt-4"
                 style={{ borderBottom: "2px solid #303030" }}
               >
-                21 Aug, 2024
+                5 Nov, 2024
               </p>
               <p className="text-[#303030] medium-font mb-3 mt-3">
-                Navigating the Path To Top MBA Colleges in India and Private
-                Universities in Gurgaon
+                The Power of Networking on Campus
               </p>
-              <Link href="#" className="red-color underline">
+              <Link href="/blog-details-4" className="red-color underline">
                 READ MORE
               </Link>
             </div>
 
+            {/* Blog 6 */}
             <div className="mb-5">
               <img
-                src="/blog-1.webp"
-                alt="Campus Life"
+                src="/campus-life.webp"
+                alt="Student Clubs"
                 className="w-full object-cover"
               />
               <p
                 className="text-[#303030] smaller-font pb-3 mt-4"
                 style={{ borderBottom: "2px solid #303030" }}
               >
-                21 Aug, 2024
+                20 Nov, 2024
               </p>
               <p className="text-[#303030] medium-font mb-3 mt-3">
-                Navigating the Path To Top MBA Colleges in India and Private
-                Universities in Gurgaon
+                Joining Student Clubs for Personal and Professional Growth
               </p>
-              <Link href="#" className="red-color underline">
+              <Link href="/blog-details-5" className="red-color underline">
                 READ MORE
               </Link>
             </div>
-            
           </div>
         </section>
         <Newsletter />
@@ -175,5 +174,3 @@ export default function AboutPage() {
     </>
   );
 }
-
-
