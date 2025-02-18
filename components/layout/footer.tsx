@@ -110,6 +110,11 @@ export function Footer() {
       <div className="py-5 mt-5 smaller-font border-t text-center text-gray-600">
         <p>Copyright ©2024 All rights reserved</p>
       </div>
+      <div className="fixed bottom-4 right-4">
+        <a href="https://wa.me/7247823548" target="_blank" rel="noopener noreferrer">
+          <img src="/image.png" alt="WhatsApp Chat" width={65} height={65} />
+        </a>
+      </div>
     </footer>
   )
 }
