@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Newsletter } from "@/components/sections/newsletter";
 import type { Metadata } from "next";
 import { ContactForm } from "@/components/sections/contact-form";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Admissions | Academic College",
@@ -328,12 +329,12 @@ export default function AdmissionsPage() {
                   Your Future Starts Here – Apply Today and Take the First Step Toward Success!
                 </p>
                 <div className="flex flex-wrap gap-4">
-                  <Button className="bg-red-color text-white border-none rounded-none font-semibold smallest-font p-5">
+                  <Link href='/admissions' className="bg-red-color text-white border-none rounded-none font-semibold smallest-font px-5 py-2">
                     Apply Now
-                  </Button>
-                  <Button className="bg-red-color text-white border-none rounded-none font-semibold smallest-font p-5">
+                  </Link>
+                  <a href='/BBA-brochure.pdf' target="_blank" download className="bg-red-color text-white border-none rounded-none font-semibold smallest-font flex items-center px-5">
                     Download Brochure
-                  </Button>
+                  </a>
                 </div>
               </div>
               <ContactForm />

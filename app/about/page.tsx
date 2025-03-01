@@ -1,10 +1,8 @@
 import { Footer } from "@/components/layout/footer"
 import { Header } from "@/components/layout/header"
-import { Card, CardContent } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
-import { ArrowRight } from "lucide-react"
 import { Newsletter } from "@/components/sections/newsletter"
 import type { Metadata } from 'next'
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "About Us | Academic College",
@@ -77,9 +75,9 @@ export default function AboutPage() {
                 A Legacy of Learning, A Future of Possibilities – Get to Know Us.
               </p>
               <div className="flex flex-wrap gap-4">
-                <Button className="bg-red-color text-white border-none rounded-none font-semibold smaller-font px-5 py-2">
+                <Link href='/admissions' className="bg-red-color text-white border-none rounded-none font-semibold smallest-font px-5 py-2">
                   Apply Now
-                </Button>
+                </Link>
               </div>
             </div>
           </div>

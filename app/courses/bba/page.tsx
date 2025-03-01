@@ -1,6 +1,5 @@
 import { Footer } from "@/components/layout/footer";
 import { Header } from "@/components/layout/header";
-import { Button } from "@/components/ui/button";
 import { Newsletter } from "@/components/sections/newsletter";
 import { WhyChooseUs } from "@/components/sections/why-choose-us";
 import type { Metadata } from "next";
